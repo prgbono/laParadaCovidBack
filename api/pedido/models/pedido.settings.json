@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "Pedidos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Cliente": {
+      "type": "string",
+      "required": true
+    },
+    "Pagado": {
+      "type": "boolean",
+      "required": true
+    },
+    "Fecha_recogida": {
+      "type": "date",
+      "required": true
+    },
+    "Hora_recogida": {
+      "type": "time",
+      "required": true
+    },
+    "PVP_total": {
+      "type": "decimal",
+      "required": true
+    },
+    "Fecha_creacion": {
+      "type": "date",
+      "required": true
+    },
+    "Comentarios": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}

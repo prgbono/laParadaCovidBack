@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalle_pedidos",
+  "info": {
+    "name": "Detalle_pedido",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Kg": {
+      "type": "decimal",
+      "required": true
+    },
+    "Id_producto": {
+      "type": "integer",
+      "required": true
+    },
+    "Id_pedido": {
+      "type": "integer"
+    }
+  }
+}
